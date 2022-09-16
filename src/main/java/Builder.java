@@ -27,7 +27,6 @@ public class Builder {
 
         camera.off();
 
-
     }
 
 

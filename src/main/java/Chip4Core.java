@@ -1,11 +1,9 @@
 import java.util.ArrayList;
+import java.util.stream.Stream;
 
 public class Chip4Core extends Chip{
 
     public Chip4Core(){
-        this.cores=new Core[Configuration.INSTANCE.numberOfCoresIn4Core];
-        for(int i=0;i<Configuration.INSTANCE.numberOfCoresIn4Core;i++){
-            cores[i]=new Core();
-        }
+        this.cores= Stream.generate(Core::new).limit(Configuration.INSTANCE.numberOfCoresIn4Core).toArray(Core[]::new);
     }
 }

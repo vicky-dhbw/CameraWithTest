@@ -6,6 +6,6 @@ public class MemoryCardHashMapAbility extends MemoryCard{
 
     HashMap<Integer,Picture> pictureHashMap=new HashMap<>();
 
-    public MemoryCardHashMapAbility() throws NoSuchAlgorithmException {
+    public MemoryCardHashMapAbility() {
     }
 }

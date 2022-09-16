@@ -151,5 +151,8 @@ public class Camera implements ICamera{
     public IRLed[] getIrLedArray(){
         return irLedArray;
     }
+    public Chip[] getChips(){
+        return chips;
+    }
 
 }
