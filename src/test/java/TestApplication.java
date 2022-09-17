@@ -8,7 +8,6 @@ import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.util.Stack;
 
-import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
@@ -63,10 +62,10 @@ public class TestApplication {
 
         faceData= camera.getRawFacePicture(25);
         coordinates=camera.getFaceArea(faceData);
-        assertEquals(expectedCoordinates[0],coordinates[0]);
-        assertEquals(expectedCoordinates[1],coordinates[1]);
-        assertEquals(expectedCoordinates[2],coordinates[2]);
-        assertEquals(expectedCoordinates[3],coordinates[3]);
+
+        for(int i=0;i<4;i++){
+            assertEquals(expectedCoordinates[i],coordinates[i]);
+        }
 
         Picture picture=camera.extractField(25,faceData,coordinates);
         MemoryCard memoryCard = camera.getMemoryCard();

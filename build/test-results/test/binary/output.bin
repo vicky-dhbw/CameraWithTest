@@ -3,11 +3,13 @@
 
 BAnalysing face data to generate coordinates of the face area.....
 $Coordinates successfully generated!
+ Coordinates are: [2, 2, 11, 11]
 
 reading raw face data..
 
 BAnalysing face data to generate coordinates of the face area.....
 $Coordinates successfully generated!
+ Coordinates are: [2, 2, 11, 11]
 
 4Extracting field from face data using coordinates..
 #Saving picture to memory card.....

@@ -46,7 +46,9 @@ public class Camera implements ICamera{
 
     @Override
     public Picture extractField(int id, char[][] face, int[] area) {
-        return FaceFieldExtractor.extractField(id,face,area);
+        Picture picture=FaceFieldExtractor.extractField(id,face,area);
+        PictureSaver.savePicture(memoryCard,picture);
+        return picture;
     }
 
     @Override

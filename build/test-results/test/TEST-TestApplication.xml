@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestApplication" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-09-16T17:32:23" hostname="Vickys-MacBook-Pro.local" time="0.046">
+<testsuite name="TestApplication" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-09-17T09:09:23" hostname="Vickys-MacBook-Pro.local" time="0.043">
   <properties/>
-  <testcase name="testAssertNotNull()" classname="TestApplication" time="0.024"/>
+  <testcase name="testAssertNotNull()" classname="TestApplication" time="0.019"/>
   <testcase name="isOn()" classname="TestApplication" time="0.001"/>
-  <testcase name="testCoordinatesFor1()" classname="TestApplication" time="0.011"/>
-  <testcase name="testIfMemoryCardWorks()" classname="TestApplication" time="0.004"/>
-  <testcase name="checkArrayIsNotEmpty()" classname="TestApplication" time="0.001"/>
+  <testcase name="testCoordinatesFor1()" classname="TestApplication" time="0.012"/>
+  <testcase name="testIfMemoryCardWorks()" classname="TestApplication" time="0.005"/>
+  <testcase name="checkArrayIsNotEmpty()" classname="TestApplication" time="0.0"/>
   <system-out><![CDATA[
 reading raw face data..
 
 Analysing face data to generate coordinates of the face area.....
 Coordinates successfully generated!
+Coordinates are: [2, 2, 11, 11]
 
 reading raw face data..
 
 Analysing face data to generate coordinates of the face area.....
 Coordinates successfully generated!
+Coordinates are: [2, 2, 11, 11]
 
 Extracting field from face data using coordinates..
 Saving picture to memory card.....
